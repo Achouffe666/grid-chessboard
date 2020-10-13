@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+#wrapper{
+    display: grid;
+    grid-template-columns: repeat(50, 2.2%);
+    grid-template-rows: repeat(20, 5.2%);
+} 
+
+.numbers{
+    position: relative;
+    list-style-type: none;
+    grid-row-start: 7;
+    grid-column: 17;
+    text-align: center;
+    padding-top: 30%;
+}
+
+
+.letters{
+    position: relative;
+    list-style-type: none;
+    grid-row: 6;
+    grid-column: 18/26;
+    padding-top: 5%;
+}
+
+.letters li{
+    display: inline;
+    text-transform: uppercase;
+    padding-right: 4.5%;
+    padding-left: 4.2%;
+
+}
+
+
+
+
+#chess-table{
+    grid-row-start: 7;
+    grid-column-start: 18;
+    background-image: url(images/table.png);
+    background-size: 510px;
+    background-position: 65% 67%;
+    height: 450px;
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(8, 12.5%);
+    grid-template-areas:"a8 b8 c8 d8 e8 f8 g8 h8"
+                        "a7 b7 c7 d7 e7 f7 g7 h7"
+                        "a6 b6 c6 d6 e6 f6 g6 h6"
+                        "a5 b5 c5 d5 e5 f5 g5 h5"
+                        "a4 b4 c4 d4 e4 f4 g4 h4"
+                        "a3 b3 c3 d3 e3 f3 g3 h3"
+                        "a2 b2 c2 d2 e2 f2 g2 h2"
+                        "a1 b1 c1 d1 e1 f1 g1 h1";
+}
+
+
+.Black-King{
+    color: tomato;
+   font-size: 45px;
+   text-align: center;
+    grid-area: d8;
+}
+.Black-Queen{
+    color: tomato;
+   font-size: 45px;
+   text-align: center;
+    grid-area: e8;
+}
+.Black-Rook-1{
+    color: tomato;
+   font-size: 45px;
+   text-align: center;
+    grid-area: a8;
+}
+.Black-Rook-2{
+       color: tomato;
+   font-size: 45px;
+   text-align: center;
+    grid-area: h8;
+}
+.Black-Bishop-1{
+       color: tomato;
+   font-size: 45px;
+   text-align: center;
+    grid-area: c8;
+}
+.Black-Bishop-2{
+       color: tomato;
+   font-size: 45px;
+   text-align: center;
+    grid-area: f8;
+}
+.Black-Knight-1{
+       color: tomato;
+   font-size: 45px;
+   text-align: center;
+    grid-area: b8;
+}
+.Black-Knight-2{
+       color: tomato;
+   font-size: 45px;
+   text-align: center;
+    grid-area: g8;
+}
+.Black-Pawn-1{
+       color: tomato;
+   font-size: 45px;
+   text-align: center;
+    grid-area: a7;
+}
+.Black-Pawn-2{
+       color: tomato;
+   font-size: 45px;
+   text-align: center;
+    grid-area: b7;
+}
+.Black-Pawn-3{
+       color: tomato;
+   font-size: 45px;
+   text-align: center;
+    grid-area: c7;
+}
+.Black-Pawn-4{
+       color: tomato;
+   font-size: 45px;
+   text-align: center;
+    grid-area: d7;
+}
+.Black-Pawn-5{
+       color: tomato;
+   font-size: 45px;
+   text-align: center;
+    grid-area: e7;
+}
+.Black-Pawn-6{
+       color: tomato;
+   font-size: 45px;
+   text-align: center;
+    grid-area: f7;
+}
+.Black-Pawn-7{
+       color: tomato;
+   font-size: 45px;
+   text-align: center;
+    grid-area: g7;
+}
+.Black-Pawn-8{
+    color: tomato;
+   font-size: 45px;
+   text-align: center;
+    grid-area: h7;
+}
+.White-King{
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    grid-area: d1;
+}
+.White-Queen{
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    grid-area: e1;
+}
+.White-Rook-1{
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    grid-area: a1;
+}
+.White-Rook-2{
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    grid-area: h1;
+}
+.White-Bishop-1{
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    grid-area: c1;
+}
+.White-Bishop-2{
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    grid-area: f1;
+}
+.White-Knight-1{
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    grid-area: b1;
+}
+.White-Knight-2{
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    grid-area: g1;
+}
+.White-Pawn-1{
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    grid-area: a2;
+}
+.White-Pawn-2{
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    grid-area: b2;
+}
+.White-Pawn-3{
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    grid-area: c2;
+}
+.White-Pawn-4{
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    grid-area: d2;
+}
+.White-Pawn-5{
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    grid-area: e2;
+}
+.White-Pawn-6{
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    grid-area: f2;
+}
+.White-Pawn-7{
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    grid-area: g2;
+}
+.White-Pawn-8{
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    grid-area: h2;
+}
